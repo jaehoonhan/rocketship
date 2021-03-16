@@ -36,14 +36,18 @@ Using [Polygon API](https://polygon.io/), Rocketship retrieves live data from th
    * 
 
 
-### 3. Navigation
+### 3. Prototype
+* **Landing/Login/Register**
 
+![Login/Register/LogOut](https://i.imgur.com/eUqTe7K.gif)
 
+* **Home/Portfolio/Details**
 
-**Flow Navigation** (Screen to Screen) 
+![Home/Portfolio/stocks](https://i.imgur.com/byCTzv7.gif)
 
+* **Cash Management**
 
-## Low Fidelity Wireframe
+![Cash](https://i.imgur.com/wqw249e.gif)
 
 
 ## Schema 
@@ -55,7 +59,8 @@ Using [Polygon API](https://polygon.io/), Rocketship retrieves live data from th
    |               |          |             |
    |               |          |             |
    |               |          |             |
+
 ### Networking
 - [Add list of network requests by screen ]
 - [Create basic snippets for each network request]
-- [OPTIONAL: List endpoints for Blackboard API]
+- [OPTIONAL: List endpoints for Polygon API]
