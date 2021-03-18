@@ -10,6 +10,7 @@
     "polygon.io": "^2.0.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-native-linear-gradient": "^2.5.6",
     "react-plotly.js": "^2.5.1",
     "react-scripts": "4.0.3",
     "web-vitals": "^1.1.0"
