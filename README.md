@@ -28,12 +28,8 @@ Using [Polygon API](https://polygon.io/), Rocketship retrieves live data from th
 **Optional Nice-to-have Stories**
 
 
-### 2. Screen Archetypes
-
-* Login/Register
-   * The first screen after launch will be the Login/Register
-* Home
-   * 
+### 2. Flowchart
+![alt text](https://github.com/rocketship-devs/rocketship/blob/main/_assets/rocketship-controlflow.jpg?raw=true)
 
 
 ### 3. Prototype
