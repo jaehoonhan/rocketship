@@ -1,4 +1,5 @@
 import Stock from './Stock'
+//import Stocklist from'./Stocklist'
 import './App.css';
 import {Menuitems} from "./Menuitems"
 
@@ -23,7 +24,7 @@ function App() {
           </ul>
         </nav>
       </div>
-        <Stock>
+        <Stock >
         
         </Stock> 
         
