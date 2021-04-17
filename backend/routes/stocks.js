@@ -18,13 +18,13 @@ router.route('/').get((req, res) => {
 router.route('/add').post((req, res) => {
 
     // store stock attritubes
-    const username = req.body.username;
+    const userid = req.body.userid;
     const ticker = req.body.ticker;
     const date = Date.parse(req.body.date);
     const quantity = Number(req.body.quantity);
     // Create new Stock using stored values
     const newStock = new Stock({
-        username,
+        userid,
         ticker,
         date,
         quantity,

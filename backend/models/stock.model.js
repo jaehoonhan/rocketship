@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 // Define stock portfolio Schema
 const stockSchema = new Schema({
     // Attributes and data types
-    username: { 
+    userid: { 
         type: Schema.ObjectId, 
         ref: 'user',
         required: true 
