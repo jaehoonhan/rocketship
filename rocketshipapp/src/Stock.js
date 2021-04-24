@@ -15,30 +15,30 @@ class Stock extends React.Component {
   }
   //This function is used for daily chart, the api only allows for yesterday on the free version.
   yesterday = ( function(){this.setDate(this.getDate()-1); return this} ).call(new Date());
-
+  getlastyear = ( function(){this.setDate(this.getDate()-1); this.setFullYear(this.getFullYear()-1); return this} ).call(new Date());
   fetchstock() {
     const pointerToThis = this;
     console.log(pointerToThis);
     const API_KEY = "xPz4AilYj9x8joMVCsgBwjtZhpYvEmzr";
     //let currdate = new Date().toISOString().slice(0, 10);
     let yestdate = this.yesterday.toISOString().slice(0, 10);
+    let lastyear = this.getlastyear.toISOString().slice(0, 10);
     let stocksym = "TSLA";
-    //let API_Call = "https://api.polygon.io/v2/aggs/ticker/" + stocksym + "/range/1/day/2020-10-14/" + yestdate + "?unadjusted=true&sort=asc&limit=120&apiKey=" + API_KEY;
-    let API_Call = "https://api.polygon.io/v2/aggs/ticker/" + stocksym + "/range/1/minute/" + yestdate + "/" + yestdate + "?unadjusted=true&sort=asc&limit=675&apiKey=" + API_KEY;
+    let API_Call = "https://api.polygon.io/v2/aggs/ticker/" + stocksym + "/range/1/day/"+ lastyear + "/" + yestdate + "?unadjusted=false&sort=asc&limit=251&apiKey=" + API_KEY;
+    //let API_Call = "https://api.polygon.io/v2/aggs/ticker/" + stocksym + "/range/1/minute/" + yestdate + "/" + yestdate + "?unadjusted=true&sort=asc&limit=675&apiKey=" + API_KEY;
     let stockchartXcalfun = [];
     let stockchartYcalfun = [];
-    //TSLA.LON&apikey=demo
-    //API_KEY: I63OAH7A35O2X4A4
+
 
     fetch(API_Call) 
       .then(function (response) {
         return response.json();
       })
       .then(function (data) {
-        console.log(data);
+    
 
         for (var key in data["results"]) {
-          var s = new Date(data["results"][key]["t"]).toLocaleTimeString("en-US")
+          var s = new Date(data["results"][key]["t"]).toLocaleDateString("fr-CA");
           stockchartXcalfun.push(s);
           stockchartYcalfun.push(data["results"][key]["vw"]);
         }
@@ -48,6 +48,7 @@ class Stock extends React.Component {
           stockChartXval: stockchartXcalfun,
           stockChartYval: stockchartYcalfun,
           stockname: stocksym,
+           
         });
       });
   }
@@ -80,6 +81,35 @@ class Stock extends React.Component {
               zeroline: false,
               visible: false,
               fixedrange: true,
+              type : 'date',
+              rangeselector: {
+                visible : true,
+                buttons: [
+                  {
+                    step: 'month',
+                    stepmode: 'backward',
+                    count: 1,
+                    label: '1m'
+                }, {
+                  step: 'month',
+                  stepmode: 'backward',
+                  count: 3,
+                  label: '3m'
+              }, {
+                    step: 'month',
+                    stepmode: 'backward',
+                    count: 6,
+                    label: '6m'
+                },{   
+                    step: 'year',
+                    visible : true
+                  }
+                ]
+            },
+            
+          
+          
+
             },
             yaxis: {
               showgrid: false,
@@ -87,6 +117,7 @@ class Stock extends React.Component {
               visible: false,
               showline: true,
               fixedrange: true,
+              
             },
           }}
           config={{ displayModeBar: false, scrollZoom: false }}
