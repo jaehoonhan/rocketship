@@ -23,7 +23,7 @@ class Stock extends React.Component {
     //let currdate = new Date().toISOString().slice(0, 10);
     let yestdate = this.yesterday.toISOString().slice(0, 10);
     let lastyear = this.getlastyear.toISOString().slice(0, 10);
-    let stocksym = "TSLA";
+    let stocksym = "PLTR";
     let API_Call = "https://api.polygon.io/v2/aggs/ticker/" + stocksym + "/range/1/day/"+ lastyear + "/" + yestdate + "?unadjusted=false&sort=asc&limit=251&apiKey=" + API_KEY;
     //let API_Call = "https://api.polygon.io/v2/aggs/ticker/" + stocksym + "/range/1/minute/" + yestdate + "/" + yestdate + "?unadjusted=true&sort=asc&limit=675&apiKey=" + API_KEY;
     let stockchartXcalfun = [];

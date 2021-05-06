@@ -1,7 +1,8 @@
 import Stock from './Stock'
-//import Stocklist from'./Stocklist'
+import Stocklist from'./Stocklist'
 import './App.css';
 import {Menuitems} from "./Menuitems"
+import Search from './Search';
 
 function App() {
   return (
@@ -10,6 +11,8 @@ function App() {
          <div>
         <nav className="NavbarItems">
           <h1 className="navbar-logo">Rocketship</h1>
+          <Search>
+          </Search>
           <ul className="nav-menu">
             {Menuitems.map((item,index) => {
               return(
@@ -27,7 +30,10 @@ function App() {
         <Stock >
         
         </Stock> 
-        
+      <div>
+            <Stocklist>   
+            </Stocklist>
+      </div>
     </div>
   );
 }
