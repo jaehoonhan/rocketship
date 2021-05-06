@@ -1,9 +1,9 @@
-import logo from "./logo.svg"
+import logo from "../assets/logo.svg"
 import React from "react";
 
 function Home() {
   return (
-    <div className="home">
+    <div className="App-header">
       <div class="container">
         <div class="row align-items-center my-5">
           <div class="col-lg-7">

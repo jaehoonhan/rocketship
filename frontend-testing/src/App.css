@@ -1,6 +1,7 @@
 .App {
   text-align: center;
 }
+
 .App-header {
   background-color: #282c34;
   min-height: 80vh;
@@ -28,9 +29,9 @@
     transform: rotate(360deg);
   }
 }
+
 .portfolio {
-  background-color: #282c34;
-  min-height: 80vh;
+  background: linear-gradient(180deg, rgba(22,66,175,1) 0%, rgba(3,0,43,1) 150%);  min-height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -39,7 +40,7 @@
   color: white;
 }
 .cash {
-  background-color: #282c34;
+  background: linear-gradient(180deg, rgba(22,66,175,1) 0%, rgba(3,0,43,1) 150%);  min-height: 80vh;
   min-height: 80vh;
   display: flex;
   flex-direction: column;
@@ -49,7 +50,7 @@
   color: white;
 }
 .account {
-  background-color: #282c34;
+  background: linear-gradient(180deg, rgba(22,66,175,1) 0%, rgba(3,0,43,1) 150%);  min-height: 80vh;
   min-height: 80vh;
   display: flex;
   flex-direction: column;
@@ -59,7 +60,7 @@
   color: white;
 }
 .about {
-  background-color: #282c34;
+  background: linear-gradient(180deg, rgba(22,66,175,1) 0%, rgba(3,0,43,1) 150%);  min-height: 80vh;
   min-height: 80vh;
   display: flex;
   flex-direction: column;

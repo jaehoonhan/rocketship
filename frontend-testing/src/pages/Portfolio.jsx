@@ -1,4 +1,5 @@
 import React from "react";
+import Stock from "../Stock.js"
 
 function Portfolio() {
   return (
@@ -16,6 +17,8 @@ function Portfolio() {
               type and scrambled it to make a type specimen book.
             </p>
           </div>
+          <Stock>
+          </Stock>
         </div>
       </div>
     </div>

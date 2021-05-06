@@ -1,7 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { Navigation, Account, Footer, Cash, About, Portfolio } from "./";
+import { Navigation, Account, Footer, Cash, About, Portfolio, Home } from "./";
 
 function App() {
   return (
@@ -9,6 +8,7 @@ function App() {
       <Router>
         <Navigation/>
         <Switch>
+          <Route path="/" exact component={() => <Home/>}/>
           <Route path="/portfolio" exact component={() => <Portfolio/>}/>
           <Route path="/cash" exact component={() => <Cash/>}/>
           <Route path="/account" exact component={() => <Account/>}/>
