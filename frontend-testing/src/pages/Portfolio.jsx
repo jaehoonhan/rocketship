@@ -7,8 +7,11 @@ function Portfolio() {
       <div class="container">
         <div class="row align-items-center my-5">
           <div class="col-lg-7">
+            <Stock>
+            </Stock>
           </div>
-          <div class="col-lg-5">
+          <div class="col-lg-1"></div>
+          <div class="col-lg-4">
             <h1 class="font-weight-light">Portfolio</h1>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -17,8 +20,6 @@ function Portfolio() {
               type and scrambled it to make a type specimen book.
             </p>
           </div>
-          <Stock>
-          </Stock>
         </div>
       </div>
     </div>
