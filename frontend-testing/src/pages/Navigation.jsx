@@ -1,14 +1,16 @@
 import React from "react";
 import { Link, withRouter } from "react-router-dom";
+import SearchBar from "../components/SearchBar.js";
 
 function Navigation(props) {
   return (
     <div className="navigation">
       <nav class="navbar navbar-expand navbar-dark bg-dark">
         <div class="container">
-        <Link class="navbar-brand" to="/">
-          Rocketship
-        </Link>
+          <Link class="navbar-brand" to="/">
+            Rocketship
+          </Link>
+          <SearchBar/>
           <div>
             <ul class="navbar-nav ml-auto">
               <li
