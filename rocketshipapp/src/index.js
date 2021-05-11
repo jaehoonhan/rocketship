@@ -4,6 +4,14 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+export { default as Navigation } from "./pages/Navigation";
+export { default as Footer } from "./pages/Footer";
+export { default as Home } from "./pages/Home";
+export { default as About } from "./pages/About";
+export { default as Account } from "./pages/Account";
+export { default as Portfolio } from "./pages/Portfolio.jsx";
+export { default as Cash } from "./pages/Cash.jsx";
+
 ReactDOM.render(
   <React.StrictMode>
     <App />

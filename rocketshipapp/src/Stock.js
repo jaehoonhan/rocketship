@@ -55,7 +55,7 @@ class Stock extends React.Component {
   render() {
     return (
       <div>
-        {/* <Plot
+        <Plot
           data={[
             {
               x: this.state.stockChartXval,
@@ -121,7 +121,7 @@ class Stock extends React.Component {
             },
           }}
           config={{ displayModeBar: false, scrollZoom: false }}
-        /> */}
+        />
       </div>
     );
   }

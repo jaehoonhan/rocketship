@@ -1,29 +1,23 @@
-import Stock from './Stock'
-//import Stocklist from'./Stocklist'
 import './App.css';
-import {Menuitems} from "./Menuitems"
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Navigation, Account, Footer, Cash, About, Portfolio, Home } from "./";
 
 function App() {
   return (
     <div className="App">
-
-         <div>
-        <nav className="NavbarItems">
-          <h1 className="navbar-logo">Rocketship</h1>
-          <ul className="nav-menu">
-            {Menuitems.map((item,index) => {
-              return(
-                <li key={index}>
-                  <a className={item.cNane} href={item.url}>
-                    {item.title}
-                  </a>
-                </li>
-              )
-            })}
-
-          </ul>
-        </nav>
-      </div>
+      <Router>
+        <Navigation/>
+        <Switch>
+          <Route path="/" exact component={() => <Home/>}/>
+          <Route path="/portfolio" exact component={() => <Portfolio/>}/>
+          <Route path="/cash" exact component={() => <Cash/>}/>
+          <Route path="/account" exact component={() => <Account/>}/>
+          <Route path="/about" exact component={() => <About/>}/>
+        </Switch>
+      </Router>
+      <Footer/>
+      <header className="App-header">
+      </header>
     </div>
   );
 }
