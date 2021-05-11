@@ -6,7 +6,7 @@ import {Menuitems} from "./Menuitems"
 function App() {
   return (
     <div className="App">
-         
+
          <div>
         <nav className="NavbarItems">
           <h1 className="navbar-logo">Rocketship</h1>
@@ -20,14 +20,10 @@ function App() {
                 </li>
               )
             })}
-            
+
           </ul>
         </nav>
       </div>
-        <Stock >
-        
-        </Stock> 
-        
     </div>
   );
 }
