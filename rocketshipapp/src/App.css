@@ -40,7 +40,7 @@
 }
 .cash {
   background: linear-gradient(180deg, rgba(22,66,175,1) 0%, rgba(3,0,43,1) 150%);  min-height: 80vh;
-  min-height: 80vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,7 +50,7 @@
 }
 .account {
   background: linear-gradient(180deg, rgba(22,66,175,1) 0%, rgba(3,0,43,1) 150%);  min-height: 80vh;
-  min-height: 80vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -60,12 +60,19 @@
 }
 .about {
   background: linear-gradient(180deg, rgba(22,66,175,1) 0%, rgba(3,0,43,1) 150%);  min-height: 80vh;
-  min-height: 80vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+/* avoids page overflowing with no content */
+html {
+  margin:0;
+  padding:0;
+  overflow:hidden;
 }
 
