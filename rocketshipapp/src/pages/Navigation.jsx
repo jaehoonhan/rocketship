@@ -5,45 +5,50 @@ import SearchBar from "../components/SearchBar.js";
 function Navigation(props) {
   return (
     <div className="navigation">
-      <nav class="navbar navbar-expand">
+      {/* bootstrap nav classes */}
+      <nav class="navbar navbar-expand navbar-dark">
         <div class="container">
           <Link class="navbar-brand" to="/">
             Rocketship
           </Link>
-          <SearchBar />
+          <SearchBar/>
           <div>
             <ul class="navbar-nav ml-auto">
               <li
-                class={`nav-item ${props.location.pathname === "/portfolio" ? "active" : ""}`}
+                class={`nav-item ${
+                props.location.pathname === "/portfolio" ? "active" : ""}`}
               >
-                <Link class="nav-link" to="/portfolio">
-                  Portfolio
+              <Link class="nav-link" to="/portfolio">
+                Portfolio
                 <span class="sr-only">(current)</span>
-                </Link>
+              </Link>
               </li>
               <li
-                class={`nav-item ${props.location.pathname === "/cash" ? "active" : ""}`}
+                class={`nav-item ${
+                props.location.pathname === "/cash" ? "active" : ""}`}
               >
-                <Link class="nav-link" to="/cash">
-                  Cash
+              <Link class="nav-link" to="/cash">
+                Cash
                 <span class="sr-only">(current)</span>
-                </Link>
+              </Link>
               </li>
               <li
-                class={`nav-item ${props.location.pathname === "/account" ? "active" : ""}`}
+                class={`nav-item ${
+                props.location.pathname === "/account" ? "active" : ""}`}
               >
-                <Link class="nav-link" to="/account">
-                  Account
+              <Link class="nav-link" to="/account">
+                Account
                 <span class="sr-only">(current)</span>
-                </Link>
+              </Link>
               </li>
               <li
-                class={`nav-item ${props.location.pathname === "/about" ? "active" : ""}`}
+                class={`nav-item ${
+                props.location.pathname === "/about" ? "active" : ""}`}
               >
-                <Link class="nav-link" to="/about">
-                  About us
+              <Link class="nav-link" to="/about">
+                About us
                 <span class="sr-only">(current)</span>
-                </Link>
+              </Link>
               </li>
             </ul>
           </div>
