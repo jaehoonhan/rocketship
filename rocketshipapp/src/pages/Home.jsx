@@ -8,15 +8,12 @@ function Home() {
         <div class="row align-items-center my-5">
           <div class="col-lg-7">
             <img src={logo} className="App-logo" alt="logo" />
-            <p>
-              Edit <code>src/App.js</code> and save to reload.
-            </p>
           </div>
           <div class="col-lg-5">
             <h1 class="font-weight-light">Welcome to Rocketship</h1>
             <p>
-              This is the start of something new and cool.
-              Tell your friends about it!
+              User Auth is in development.<br/>
+              Head over to portfolio for now.
             </p>
           </div>
         </div>
