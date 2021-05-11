@@ -30,12 +30,12 @@ class Stock extends React.Component {
     let stockchartYcalfun = [];
 
 
-    fetch(API_Call) 
+    fetch(API_Call)
       .then(function (response) {
         return response.json();
       })
       .then(function (data) {
-    
+
 
         for (var key in data["results"]) {
           var s = new Date(data["results"][key]["t"]).toLocaleDateString("fr-CA");
@@ -48,7 +48,7 @@ class Stock extends React.Component {
           stockChartXval: stockchartXcalfun,
           stockChartYval: stockchartYcalfun,
           stockname: stocksym,
-           
+
         });
       });
   }
@@ -100,15 +100,15 @@ class Stock extends React.Component {
                     stepmode: 'backward',
                     count: 6,
                     label: '6m'
-                },{   
+                },{
                     step: 'year',
                     visible : true
                   }
                 ]
             },
-            
-          
-          
+
+
+
 
             },
             yaxis: {
@@ -117,7 +117,7 @@ class Stock extends React.Component {
               visible: false,
               showline: true,
               fixedrange: true,
-              
+
             },
           }}
           config={{ displayModeBar: false, scrollZoom: false }}

@@ -1,89 +1,71 @@
 .App {
   text-align: center;
-  height:100%;
-  opacity: 1;
 }
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-li {
-  float: left;
-}
-
-a {
-  display: block;
-  padding: 10%;
-  color: white;
-  text-decoration: none;
-}
-
-
-body {
-  background: rgb(22,66,175);
-  background: linear-gradient(180deg, rgba(22,66,175,1) 0%, rgba(3,0,43,1) 150%);
-  margin: 0; 
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
-.NavbarItems {
-  background: rgb(22,66,175);
-  background: linear-gradient(180deg, rgba(22,66,175,1) 0%, rgba(3,0,43,1) 150%);
-  height: 80px;
+.App-header {
+  background-color: #282c34;
+  min-height: 80vh;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  align-items: center;
-  font-size: 1.2rem;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
-.navbar-logo {
-  color: #fff;
-  justify-self: start;
-  /* margin-left: 2px; */
-  cursor: pointer;
-  margin-left: 20%;
-}
-
-.nav-menu{
-  display: grid;
-  grid-template-columns: repeat(4,auto);
-  column-gap: 2rem;
-  list-style: none;
-  text-align: center;
-  width: 70vw;  
-  justify-content: end;
-  margin-right: 20%;
-  align-items: center;
-}
-table{
-  align-items: center;
+  font-size: calc(10px + 2vmin);
   color: white;
-  margin-left: auto;
-  margin-right: auto;
 }
-th, td {
-  padding: 10px;
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
 }
-.control{
-  display: inline-block;
-  list-style-type: none;
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.portfolio {
+  background: linear-gradient(180deg, rgba(22,66,175,1) 0%, rgba(3,0,43,1) 150%);  min-height: 80vh;
   display: flex;
-  margin-left: 20%;
-  margin-right: 20%;
-  
-  
-}
-.input{
-  opacity: 1;
-  font-size: 15px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
   color: white;
-  margin: 0 auto;
-  display: block;
-  background-color: transparent;
-  border: none;
-  margin-left: auto;
 }
+.cash {
+  background: linear-gradient(180deg, rgba(22,66,175,1) 0%, rgba(3,0,43,1) 150%);  min-height: 80vh;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.account {
+  background: linear-gradient(180deg, rgba(22,66,175,1) 0%, rgba(3,0,43,1) 150%);  min-height: 80vh;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.about {
+  background: linear-gradient(180deg, rgba(22,66,175,1) 0%, rgba(3,0,43,1) 150%);  min-height: 80vh;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
