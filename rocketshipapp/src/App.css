@@ -77,7 +77,6 @@ body {
   padding:0;
   background: linear-gradient(180deg, rgba(22,66,175,1) 0%, rgba(3,0,43,1) 150%);
 }
-<<<<<<< HEAD
 .input{
   opacity: 1;
   font-size: 15px;
@@ -101,5 +100,3 @@ h3{
 .startdate{
   opacity: .5;
 }
-=======
->>>>>>> dca244032b030fd346bf00d3008de5ffe743f4b1

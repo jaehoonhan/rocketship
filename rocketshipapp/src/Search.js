@@ -14,8 +14,5 @@ class Search extends React.Component{
             </ul>
         )
     }
-
-
-
 }
 export default Search;
