@@ -1,8 +1,9 @@
 import Stock from './Stock'
-import Stocklist from'./Stocklist'
+//import Stocklist from'./Stocklist'
 import './App.css';
 import {Menuitems} from "./Menuitems"
 import Search from './Search';
+//import Topmovers from './Topmovers'
 
 function App() {
   return (
@@ -31,8 +32,7 @@ function App() {
         
         </Stock> 
       <div>
-            <Stocklist>   
-            </Stocklist>
+
       </div>
     </div>
   );

@@ -87,3 +87,16 @@ th, td {
   border: none;
   margin-left: auto;
 }
+h2{
+  color: white;
+}
+select{
+  display: inline-block;
+}
+h3{
+  color: white;
+
+}
+.startdate{
+  opacity: .5;
+}
