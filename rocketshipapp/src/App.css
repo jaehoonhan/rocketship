@@ -1,82 +1,83 @@
 .App {
   text-align: center;
-  height:100%;
-  opacity: 1;
 }
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-li {
-  float: left;
-}
-
-a {
-  display: block;
-  padding: 10%;
+.App-header {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
   color: white;
-  text-decoration: none;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
+.portfolio {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.cash {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.account {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.about {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+/* avoids page overflowing with no content */
+html {
+  margin:0;
+  padding:0;
+  overflow:hidden;
+}
 
 body {
-  background: rgb(22,66,175);
+  margin:0;
+  padding:0;
   background: linear-gradient(180deg, rgba(22,66,175,1) 0%, rgba(3,0,43,1) 150%);
-  margin: 0; 
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 }
-
-.NavbarItems {
-  background: rgb(22,66,175);
-  background: linear-gradient(180deg, rgba(22,66,175,1) 0%, rgba(3,0,43,1) 150%);
-  height: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.2rem;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
-.navbar-logo {
-  color: #fff;
-  justify-self: start;
-  /* margin-left: 2px; */
-  cursor: pointer;
-  margin-left: 20%;
-}
-
-.nav-menu{
-  display: grid;
-  grid-template-columns: repeat(4,auto);
-  column-gap: 2rem;
-  list-style: none;
-  text-align: center;
-  width: 70vw;  
-  justify-content: end;
-  margin-right: 20%;
-  align-items: center;
-}
-table{
-  align-items: center;
-  color: white;
-  margin-left: auto;
-  margin-right: auto;
-}
-th, td {
-  padding: 10px;
-}
-.control{
-  display: inline-block;
-  list-style-type: none;
-  display: flex;
-  margin-left: 20%;
-  margin-right: 20%;
-  
-  
-}
+<<<<<<< HEAD
 .input{
   opacity: 1;
   font-size: 15px;
@@ -100,3 +101,5 @@ h3{
 .startdate{
   opacity: .5;
 }
+=======
+>>>>>>> dca244032b030fd346bf00d3008de5ffe743f4b1
